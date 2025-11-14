@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Malinois – Un compagnon exceptionnel</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #ffe6f2; /* rose pastel */
+            color: #333;
+        }
+
+        header {
+            background: #ff99c8;
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            background-image: url('https://via.placeholder.com/1600x400?text=Malinois'); /* À remplacer */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 153, 200, 0.6);
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3em;
+            z-index: 2;
+        }
+
+        section {
+            padding: 40px 15%;
+            line-height: 1.7em;
+        }
+
+        .advantages {
+            background: #ffd1e8;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .dog-gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .dog-gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .dog-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff99c8;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Le Malinois : Un Chien Extraordinaire</h1>
+</header>
+
+<section>
+    <h2>Pourquoi choisir un Malinois ?</h2>
+    <p>
+        Le Malinois est l’un des chiens les plus impressionnants et polyvalents au monde.
+        À la fois loyal, intelligent et plein d’énergie, il est le compagnon idéal pour
+        les personnes actives et engagées. Utilisé dans la police, le sauvetage, les sports
+        canins et même comme chien de famille, il offre un mélange unique d’aptitudes physiques
+        et mentales.
+    </p>
+
+    <div class="advantages">
+        <h3>✨ Ses principaux avantages</h3>
+        <ul>
+            <li><strong>Très intelligent :</strong> il apprend vite et adore travailler.</li>
+            <li><strong>Loyal et protecteur :</strong> un excellent chien de garde.</li>
+            <li><strong>Sportif :</strong> parfait pour les personnes actives.</li>
+            <li><strong>Polyvalent :</strong> obéissance, agility, travail, compagnie… tout lui va !</li>
+            <li><strong>Énergique et joueur :</strong> idéal pour créer un lien fort.</li>
+        </ul>
+    </div>
+
+    <h2>🖼️ Galerie de Malinois</h2>
+    <div
