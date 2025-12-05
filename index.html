@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onglets 132</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4ff;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(120deg, #6a5acd, #9d8cff);
-            color: white;
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        /* --- ONGLETES --- */
         .tabs {
             display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: #ccc;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .tab.active {
+            background: #888;
+            color: white;
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Onglets 132</h1>
+
+<div class="tabs">
+    <div class="tab active" onclick="openTab('one', this)">1</div>
+    <div class="tab" onclick="openTab
