@@ -1,45 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Onglets 132</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base 132 – Châlons-en-Champagne</title>
 
     <style>
-        .tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e8f5e9; /* vert très clair */
+            color: #2e402e;
         }
 
-        .tab {
-            padding: 10px 20px;
-            background: #ccc;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .tab.active {
-            background: #888;
+        /* --- HEADER --- */
+        header {
+            background: linear-gradient(120deg, #4caf50, #2e7d32);
+            padding: 50px 20px;
+            text-align: center;
             color: white;
         }
 
-        .content {
-            display: none;
-            padding: 20px;
-            background: #f1f1f1;
-            border-radius: 5px;
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-
-        .content.active {
-            display: block;
-        }
-    </style>
-</head>
-
-<body>
-
-<h1>Onglets 132</h1>
-
-<div class="tabs">
-    <div class="tab active" onclick="openTab('one', this)">1</div>
-    <div class="tab" onclick="openTab
