@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Malinois – Un compagnon exceptionnel</title>
+    <title>Comparatif Malinois & Berger Allemand</title>
 
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: #ffe6f2; /* rose pastel */
+            background: #ffe6f2;
             color: #333;
         }
 
@@ -18,7 +18,7 @@
             padding: 40px 20px;
             text-align: center;
             color: white;
-            background-image: url('https://via.placeholder.com/1600x400?text=Malinois'); /* À remplacer */
+            background-image: url('https://via.placeholder.com/1600x400?text=Chiens+de+Travail');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -40,18 +40,46 @@
             z-index: 2;
         }
 
-        section {
+        /* ----- ONGLET STYLES ----- */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .tab {
+            padding: 15px 30px;
+            background: #ffb3d6;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .tab:hover,
+        .tab.active {
+            background: #ff6fa7;
+        }
+
+        .content {
+            display: none;
             padding: 40px 15%;
+            animation: fadeIn 0.5s ease;
             line-height: 1.7em;
         }
 
-        .advantages {
-            background: #ffd1e8;
-            padding: 30px;
-            border-radius: 20px;
-            margin-top: 30px;
+        .content.active {
+            display: block;
         }
 
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Galerie */
         .dog-gallery {
             display: flex;
             gap: 20px;
@@ -85,29 +113,11 @@
 <body>
 
 <header>
-    <h1>Le Malinois : Un Chien Extraordinaire</h1>
+    <h1>Malinois vs Berger Allemand</h1>
 </header>
 
-<section>
-    <h2>Pourquoi choisir un Malinois ?</h2>
-    <p>
-        Le Malinois est l’un des chiens les plus impressionnants et polyvalents au monde.
-        À la fois loyal, intelligent et plein d’énergie, il est le compagnon idéal pour
-        les personnes actives et engagées. Utilisé dans la police, le sauvetage, les sports
-        canins et même comme chien de famille, il offre un mélange unique d’aptitudes physiques
-        et mentales.
-    </p>
-
-    <div class="advantages">
-        <h3>✨ Ses principaux avantages</h3>
-        <ul>
-            <li><strong>Très intelligent :</strong> il apprend vite et adore travailler.</li>
-            <li><strong>Loyal et protecteur :</strong> un excellent chien de garde.</li>
-            <li><strong>Sportif :</strong> parfait pour les personnes actives.</li>
-            <li><strong>Polyvalent :</strong> obéissance, agility, travail, compagnie… tout lui va !</li>
-            <li><strong>Énergique et joueur :</strong> idéal pour créer un lien fort.</li>
-        </ul>
-    </div>
-
-    <h2>🖼️ Galerie de Malinois</h2>
-    <div
+<!-- ONGLETES -->
+<div class="tabs">
+    <div class="tab active" onclick="openTab('malinois')">🐕 Malinois</div>
+    <div class="tab" onclick="openTab('berger')">🐺 Berger Allemand</div>
+    <div class="tab" onclick="openTab('debat')">⚔️ Débat
