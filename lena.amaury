@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Complicité – Amaury & Moi</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Trebuchet MS", sans-serif;
+            background: #f6e6ff;
+            color: #402a46;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background: linear-gradient(120deg, #a95be8, #6f2dbd);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.7em;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* --- MENU --- */
+        nav {
+            background: #6f2dbd;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 14px 22px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        nav a:hover {
+            background: #4c1f8a;
+        }
+
+        /* --- SECTIONS --- */
+        section {
+            display: none;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 0.5s;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* --- IMAGES --- */
+        .gallery img {
+            width: 30%;
+            margin: 1.5%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #4c1f8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+
+        window.onload = () => showSection("accueil");
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>Mon Histoire avec Amaury</h1>
+    <p>Une complicité née par hasard… et devenue essentielle</p>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('accueil')">Accueil</a>
+    <a href="#" onclick="showSection('rencontre')">Notre Rencontre</a>
+    <a href="#" onclick="showSection('cinema')">Le Cinéma</a>
+    <a href="#" onclick="showSection('apres')">Après ce Jour</a>
+    <a href="#" onclick="showSection('inseparables')">Inseparables</a>
+</nav>
+
+<!-- --- ACCUEIL --- -->
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>
+        Voici notre histoire… celle d’une complicité qui n’était pas du tout prévue.
+        Une relation née d’un simple snap, d’un jeu de flammes, et qui s’est transformée
+        en quelque chose que je n’aurais jamais imaginé.
+        <br><br>
+        Tout a commencé sans intention, mais aujourd’hui… je ne me vois plus sans lui.
+    </p>
+</section>
+
+<!-- --- RENCONTRE --- -->
+<section id="rencontre">
+    <h2>Comment tout a commencé</h2>
+    <p>
+        Au début, Amaury et moi… on se parlait juste pour les flam
