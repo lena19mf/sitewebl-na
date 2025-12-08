@@ -84,3 +84,124 @@
             color: white;
             text-align: center;
             padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+
+        window.onload = () => showSection("accueil");
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>Mon Histoire avec Amaury</h1>
+    <p>Une complicité née par hasard… et devenue essentielle</p>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('accueil')">Accueil</a>
+    <a href="#" onclick="showSection('rencontre')">Notre Rencontre</a>
+    <a href="#" onclick="showSection('cinema')">Le Cinéma</a>
+    <a href="#" onclick="showSection('apres')">Après ce Jour</a>
+    <a href="#" onclick="showSection('amauryyy')">Amauryyy</a>
+</nav>
+
+<!-- --- ACCUEIL --- -->
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>
+        Voici notre histoire… celle d’une complicité qui n’était pas du tout prévue.
+        Une relation née d’un simple snap, d’un jeu de flammes, et qui s’est transformée
+        en quelque chose que je n’aurais jamais imaginé.
+        <br><br>
+        Tout a commencé sans intention, mais aujourd’hui… je ne me vois plus sans lui.
+    </p>
+</section>
+
+<!-- --- RENCONTRE --- -->
+<section id="rencontre">
+    <h2>Comment tout a commencé</h2>
+    <p>
+        Au début, Amaury et moi… on se parlait juste pour les flammes sur Snapchat.
+        Rien de plus. C’était juste un truc qu’on faisait tous les deux machinalement.
+        <br><br>
+        Et pourtant, petit à petit, sans que je comprenne vraiment pourquoi,
+        on a commencé à discuter un peu plus. Puis encore plus. Puis tous les jours.
+        <br><br>
+        C’est fou de se dire que tout ça est parti d’un truc aussi insignifiant.
+    </p>
+</section>
+
+<!-- --- CINÉMA --- -->
+<section id="cinema">
+    <h2>Notre première sortie</h2>
+    <p>
+        Un jour, on a décidé de se voir en vrai. On a choisi le cinéma.
+        Je me rappelle encore l’énergie bizarre que j’avais dans le ventre ce jour-là,
+        un mélange de stress et d’excitation.
+        <br><br>
+        Quand je l’ai vu… j’ai su que ça allait être une journée différente.
+        On a rigolé, on a parlé, on s’est senti bien. Naturellement. Sans forcer.
+        <br><br>
+        Et je pense que ce jour-là, on a compris qu’il y avait quelque chose entre nous,
+        même si on n’osait pas encore se le dire.
+    </p>
+</section>
+
+<!-- --- APRÈS LE CINÉMA --- -->
+<section id="apres">
+    <h2>Depuis ce jour-là…</h2>
+    <p>
+        On n’a pas arrêté de se parler.  
+        C’était devenu automatique : le matin, le soir, n’importe quand.
+        <br><br>
+        On ne laissait plus une journée passer sans prendre des nouvelles,
+        sans raconter nos trucs, sans rire ensemble.
+        <br><br>
+        Une complicité s’est installée toute seule, comme si elle était là
+        depuis longtemps et qu’elle attendait juste le bon moment.
+    </p>
+</section>
+
+<!-- --- AMAURYYY --- -->
+<section id="amauryyy">
+    <h2>Amauryyy</h2>
+    <p>
+        Bref… Amaury c’est un garçon intelligent.  
+        Un garçon qui réfléchit, qui a du cœur, qui sait écouter
+        même quand je parle trop.  
+        Un garçon discret, mais qui a cette façon d’être présent au bon moment,
+        sans en faire trop, sans chercher à se montrer.
+        <br><br>
+        Et puis il a ces petites attentions, ces petites intentions
+        qui ne payent pas de mine mais qui font tellement la différence.
+        <br><br>
+        Franchement… c’est un des seuls garçons bien qui restent.
+        Sa maman peut être fière de lui.  
+        Même pas “peut-être”, non :  
+        <strong>je suis sûre et certaine qu’elle l’est.</strong>
+        <br><br>
+        Et moi…  
+        <br>
+        Je n’ai vraiment pas envie d’arrêter de lui parler.  
+        Au contraire.  
+        Plus je le découvre, plus je comprends à quel point il est rare.
+        <br><br>
+        Amaury, c’est ce genre de personne que tu rencontres une fois,  
+        et qui arrive sans prévenir à prendre une grande place dans ta vie.
+    </p>
+</section>
+
+<footer>
+    © 2025 – Notre histoire, notre complicité
+</footer>
+
+</body>
+</html>
