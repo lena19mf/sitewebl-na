@@ -3,26 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base 132 – Châlons-en-Champagne</title>
+    <title>Le Malinois – Site Complet</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #e8f5e9; /* vert très clair */
+            background: #f0f7f0;
             color: #2e402e;
         }
 
         /* --- HEADER --- */
         header {
             background: linear-gradient(120deg, #4caf50, #2e7d32);
-            padding: 50px 20px;
+            padding: 40px;
             text-align: center;
             color: white;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.8em;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            font-size: 2.6em;
         }
+
+        /* --- MENU --- */
+        nav {
+            background: #388e3c;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #2e7d32;
+        }
+
+        /* --- CONTENT --- */
+        section {
+            display: none;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 0.5s;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* --- GALERIE --- */
+        .gallery img {
+            width: 31%;
+            margin: 1%;
+            border-radius: 8px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+
+        window.onload = () => showSection("accueil");
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>Le Berger Belge Malinois</h1>
+    <p>Un chien d'exception : loyal, puissant et intelligent</p>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('accueil')">Accueil</a>
+    <a href="#" onclick="showSection('caractere')">Caractère</a>
+    <a href="#" onclick="showSection('education')">Éducation</a>
+    <a href="#" onclick="showSection('sante')">Santé</a>
+    <a href="#" onclick="showSection('galerie')">Galerie</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+</nav>
+
+<!-- --- ACCUEIL --- -->
+<section id="accueil">
+    <h2>Bienvenue sur notre site dédié au Malinois</h2>
+    <p>
+        Le Berger Belge Malinois est un chien exceptionnel, reconnu pour son intelligence,
+        son énergie et sa fidélité. Utilisé dans le sport canin, la sécurité, la police
+        et comme chien de travail, il reste aussi un formidable compagnon pour les familles actives.
+    </p>
+</section>
+
+<!-- --- CARACTÈRE --- -->
+<section id="caractere">
+    <h2>Caractère du Malinois</h2>
+    <p>
+        Le Malinois est un chien :
+        <ul>
+            <li>Très intelligent</li>
+            <li>Énergique et endurant</li>
+            <li>Protecteur et loyal</li>
+            <li>Très attaché à son maître</li>
+        </ul>
+        Il nécessite un cadre, de l'activité physique et mentale quotidienne.
+    </p>
+</section>
+
+<!-- --- ÉDUCATION --- -->
+<section id="education">
+    <h2>Éducation</h2>
+    <p>
+        Le Malinois apprend très vite mais demande une éducation sérieuse et cohérente.
+        Conseils :
+        <ul>
+            <li>Commencer le dressage tôt</li>
+            <li>Favoriser les récompenses positives</li>
+            <li>Proposer beaucoup d’exercices mentaux</li>
+            <li>Sortir plusieurs fois par jour</li>
+        </ul>
+    </p>
+</section>
+
+<!-- --- SANTÉ --- -->
+<section id="sante">
+    <h2>Santé</h2>
+    <p>
+        C’est un chien robuste, mais surveille :
+        <ul>
+            <li>Dysplasie</li>
+            <li>Problèmes articulaires (activité intense)</li>
+            <li>Soins des pattes</li>
+            <li>Alimentation équilibrée riche en protéines</li>
+        </ul>
+    </p>
+</section>
+
+<!-- --- GALERIE --- -->
+<section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1601758173925-78f05d5a3e01" alt="Malinois">
+        <img src="https://images.unsplash.com/photo-1619983081563-430690db5616" alt="Malinois">
+        <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d0" alt="Malinois">
+    </div>
+</section>
+
+<!-- --- CONTACT --- -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>
+        Pour toute question ou demande, vous pouvez nous écrire à :  
+        <strong>contact@malinois-info.fr</strong>
+    </p>
+</section>
+
+<footer>
+    © 2025 – Site dédié au Berger Belge Malinois
+</footer>
+
+</body>
+</html>
